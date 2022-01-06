@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/black">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please select currency types"
+            android:textSize="26sp"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <NumberPicker
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="40dp"
+            android:id="@+id/numberPicker"
+            android:theme="@style/PickerTheme"
+            android:layout_weight="1">
+        </NumberPicker>
+
+        <NumberPicker
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="40dp"
+            android:id="@+id/numberPickerTwo"
+            android:theme="@style/PickerTheme"
+            android:layout_weight="1">
+        </NumberPicker>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:inputType="numberDecimal"
+            android:text="1"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:id="@+id/editText">
+        </EditText>
+
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+            android:text=""
+            android:textSize="30sp"
+            android:background="@color/white"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:id="@+id/tv"
+            android:editable="false">
+        </EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="convert"
+            android:text="CONVERT"
+            android:textSize="26sp"
+            android:textColor="@color/black"
+            android:theme="@style/PickerTheme"
+            android:layout_marginTop="40dp">
+        </Button>
+
+    </LinearLayout>
+
+
+</LinearLayout>
